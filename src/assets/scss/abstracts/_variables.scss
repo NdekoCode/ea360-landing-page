@@ -24,6 +24,22 @@
   --section-space      : rem(100);
 }
 
+// paragraphe
+$large-parag  : rem(18);
+$medium-parag : rem(16);
+$default-size : 14px;
+// UTILITIES
+$border-input : 0.5px solid rgba(0, 0, 0, 0.05);
+$smart-shadow :0px 5px 14px rgba(8, 15, 52, 0.04);
+// TITLES
+$text-bigger  : rem(75);
+$title-1      : rem(50);
+$title-2      : rem(40);
+$title-3      : rem(30);
+$title-4      : rem(22);
+$title-5      : rem(20);
+$title-6      : rem(18);
+
 // MEDIA QUERIES
 $xxs  : 280px;
 $xs   : 320px;

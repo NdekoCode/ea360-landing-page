@@ -1,0 +1,72 @@
+::selection {
+  background-color: var(--color-dark-2);
+  color           : var(--bg-smooth);
+}
+
+::-webkit-scrollbar {
+  width: rem(12);
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--bg-gray-smooth)
+}
+
+::-webkit-scrollbar-thumb {
+
+  background-image  : var(--primary-color-gradient);
+  -webkit-box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.7);
+  box-shadow        : inset 2px 2px 5px 0 rgba(#fff, 0.7);
+  border-radius     : 100px;
+}
+
+html {
+  scrollbar-color: #6969dd #e0e0e0;
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
+
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  font-size      : var(--default-size);
+  overflow-x     : hidden;
+  min-height     : 100vh;
+}
+
+.container {
+  width         : 100%;
+  margin-inline : auto;
+  padding-inline: rem(20);
+
+  @media #{$sm-screen} {
+    max-width: 540px;
+  }
+
+  @media #{$md-screen} {
+    max-width: 720px;
+  }
+
+  @media #{$lg-screen} {
+    max-width: 960px;
+  }
+
+  @media #{$xl-screen} {
+    max-width: 1140px;
+  }
+
+
+  @media #{$md-screen} {
+    &:not(.fixed) {
+
+      padding-inline: 0;
+    }
+  }
+
+  @media #{$xl-screen} {
+    &.fixed {
+
+      padding-inline: 0;
+    }
+  }
+}
