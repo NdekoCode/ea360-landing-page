@@ -1,6 +1,55 @@
 :root {
   --background-color: #181856;
-  --colors-black    : #0B0B0B;
+  --color-black     : #0B0B0B;
+  --blue-dark       : #333461;
   --colors-black    : #fff;
   --primary-color   : #2015ff;
+
+  // TITLES
+  --text-bigger: rem(75);
+  --title-1    : rem(50);
+  --title-2    : rem(40);
+  --title-3    : rem(30);
+  --title-4    : rem(22);
+  --title-5    : rem(20);
+  --title-6    : rem(18);
+
+  // TRANSITION & ANIMATION
+  --transition-1       : 0.35s;
+  --transition-2       : 0.5s;
+  // SPACES
+  --min-space          : rem(25);
+  --basic-space        : rem(45);
+  --section-basic-space: rem(65);
+  --section-space      : rem(100);
+}
+
+// MEDIA QUERIES
+$xxs  : 280px;
+$xs   : 320px;
+$x-sm : 480px;
+$sm   : 576px;
+$md   : 768px;
+$lg   : 992px;
+$xl   : 1281px;
+$xxl  : 1400px;
+
+// SCREEN MEDIA
+$xxs-screen  : "only screen and (min-width:#{$xxs})";
+$xs-screen   : "only screen and (min-width:#{$xs})";
+$x-sm-screen : "only screen and (min-width:#{$x-sm})";
+$sm-screen   : "only screen and (min-width:#{$sm})";
+$md-screen   : "only screen and (min-width:#{$md})";
+$lg-screen   : "only screen and (min-width:#{$lg})";
+$xl-screen   : "only screen and (min-width:#{$xl})";
+$xxl-screen  : "only screen and (min-width:#{$xxl})";
+
+@media #{$md-screen} {
+
+  :root {
+
+    --min-space          : rem(20);
+    --basic-space        : rem(30);
+    --section-basic-space: rem(55);
+  }
 }

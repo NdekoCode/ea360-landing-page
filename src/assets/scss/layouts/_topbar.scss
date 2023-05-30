@@ -1,0 +1,9 @@
+.navbar {
+  @apply flex justify-between flex-wrap;
+
+  .navbar__list {
+    bottom    : 80px;
+    flex      : none;
+    min-height: max-content;
+  }
+}

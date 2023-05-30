@@ -25,4 +25,10 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    color: var(--color-black);
+  }
+}
+
 .navbar {}
