@@ -1,9 +1,60 @@
 .navbar {
-  @apply flex justify-between flex-wrap;
+  @apply w-full h-screen transition-colors duration-300;
+
+  .container {
+
+    @apply min-h-[80px] flex justify-between items-center flex-wrap;
+  }
+
+  .navbar__identity {
+
+    @apply min-h-[80px] flex justify-between items-center w-full;
+  }
+
+  &.active {
+    background-color: #f6f6f6;
+    @extend %fade;
+
+    .navbar__list {
+      @apply flex flex-col;
+
+      li:not(:last-child) {
+        @apply border-b border-gray-300;
+        line-height: 1.375rem;
+        padding    : 20px 0;
+        font-size  : 1rem;
+      }
+
+      .btn-content {
+        margin-top: 20px;
+      }
+    }
+  }
 
   .navbar__list {
-    bottom    : 80px;
+    display   : none;
     flex      : none;
     min-height: max-content;
+  }
+}
+
+.navbar__link {
+  @apply transition-colors duration-300;
+
+  &:hover {
+    color: var(--primary-color);
+  }
+
+  &.btn {
+    padding         : rem(15);
+    margin-top      : auto;
+    border          : 2px solid var(--primary-color);
+    border-radius   : 4px;
+    background-color: var(--color-white);
+
+    &:hover {
+      background-color: var(--primary-color);
+      color           : var(--color-white);
+    }
   }
 }

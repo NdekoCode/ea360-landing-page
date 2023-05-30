@@ -98,6 +98,14 @@
   animation: fadeIn var(--transition-2) forwards;
 }
 
+.fade {
+  animation: fadeIn var(--transition-2) forwards;
+}
+
+.fade-out {
+  animation: fadeOut var(--transition-2) forwards;
+}
+
 %fadeRight {
   animation: fadeRight var(--transition-1) forwards;
 }
