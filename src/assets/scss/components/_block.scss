@@ -58,3 +58,17 @@
     border-radius: 50%;
   }
 }
+
+.blog {
+  background-color: var(--bg-gray-smooth);
+
+  .blog-card {
+    @apply border border-gray-300 rounded-md;
+
+    img {
+      display   : block;
+      width     : 100%;
+      object-fit: cover;
+    }
+  }
+}
