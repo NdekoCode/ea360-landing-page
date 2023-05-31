@@ -1,0 +1,18 @@
+<article class="card">
+  <div class="card__body">
+    <p class="text-content">
+      {{ testimonial.content }}
+    </p>
+  </div>
+  <footer class="flex flex-col items-center gap-y-1">
+    <span class="block my-1 title title-4"> {{ testimonial.username }}</span>
+    <img
+      class="object-cover w-16 h-16"
+      [src]="testimonial.userimage"
+      [alt]="testimonial.username"
+    />
+  </footer>
+  <div class="rating">
+    <app-star-rating [rating]="testimonial.rating" />
+  </div>
+</article>

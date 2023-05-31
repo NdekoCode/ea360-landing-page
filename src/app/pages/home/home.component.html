@@ -124,7 +124,7 @@
           </svg>
         </app-card>
         <app-card
-          class="mt-10"
+          class="lg:mt-10"
           title="Experiential Learning"
           text="
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -168,7 +168,7 @@
           </svg>
         </app-card>
         <app-card
-          class="-mt-10"
+          class="lg:-mt-10"
           title="Mentoring"
           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua minim veniam.
       "
@@ -258,19 +258,14 @@
 </section>
 <section id="testimonials" class="section testimonials">
   <div class="container">
-    <h2 class="title title-2">Hear out what our clients say about us.</h2>
-
-    <article class="card">
-      <div class="card__body">
-        <p class="text-content">
-          "I gained so much confidence in my ability to connect and deepen my
-          relationships with people. "
-        </p>
-        <footer>
-          <span class="title title-4">Jane</span>
-          <img src="/assets/images/testi-1.png" alt="Testimonial" />
-        </footer>
-      </div>
-    </article>
+    <h2 class="title title-2 max-w-[550px]">
+      Hear out what our clients say about us.
+    </h2>
+    <div class="testimonial-grid">
+      <app-testimonial
+        *ngFor="let item of testimonials"
+        [testimonial]="item"
+      ></app-testimonial>
+    </div>
   </div>
 </section>

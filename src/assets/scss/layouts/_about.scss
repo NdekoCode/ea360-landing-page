@@ -17,11 +17,9 @@
   }
 
   .card {
-    @apply cursor-context-menu transition-colors duration-300;
 
-    &:nth-child(2) {
-      margin-top: rem(50);
-    }
+    @apply cursor-context-menu p-12 transition-colors duration-300;
+
 
     &:hover {
       background-color: var(--background-color);

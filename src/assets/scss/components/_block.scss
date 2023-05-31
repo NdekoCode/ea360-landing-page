@@ -35,14 +35,19 @@
   padding-top    : rem(50);
 
   .card {
-    flex-basis  : 50%;
-    min-height  : 350px;
-    height      : max-content;
-    max-width   : 360px;
     aspect-ratio: 1/1;
   }
+
 }
 
 .block-center {
   @apply flex justify-center items-center;
+}
+
+.card {
+  min-width : rem(250);
+  min-height: rem(350);
+  max-width : rem(400);
+  height    : max-content;
+  width     : max-content;
 }
