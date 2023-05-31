@@ -258,14 +258,16 @@
 </section>
 <section id="testimonials" class="section testimonials">
   <div class="container">
-    <h2 class="title title-2 max-w-[550px]">
-      Hear out what our clients say about us.
-    </h2>
-    <div class="testimonial-grid">
-      <app-testimonial
-        *ngFor="let item of testimonials"
-        [testimonial]="item"
-      ></app-testimonial>
+    <div class="max-w-[1400px] mx-auto">
+      <h2 class="title title-2 max-w-[550px]">
+        Hear out what our clients say about us.
+      </h2>
+      <div class="testimonial-grid">
+        <app-testimonial
+          *ngFor="let item of testimonials"
+          [testimonial]="item"
+        ></app-testimonial>
+      </div>
     </div>
   </div>
 </section>
@@ -285,11 +287,116 @@
     <h2 class="text-center title title-2 max-w-[680px] mx-auto blue-dark mb-5">
       Stay Motivated, read the weekly blog articles.
     </h2>
-    <div class="flex flex-wrap items-center gap-x-4 gap-y-10">
+    <div class="flex flex-wrap items-center justify-center gap-x-4 gap-y-10">
       <app-card-blog *ngFor="let item of articles" [article]="item" />
     </div>
     <div class="flex justify-center mt-10">
       <a href="#" class="btn btn-action">Read more blogs article</a>
+    </div>
+  </div>
+</section>
+<section class="annonces-product section" id="annonces">
+  <div class="container">
+    <div class="block block-content gap-x-5">
+      <div class="mb-10 block__left">
+        <h3 class="title title-2 max-w-[535px] title-blue my-5">
+          Don’t miss out on our ‘Live life at the full potential’ free guide
+        </h3>
+        <div class="my-5 block-context">
+          <p class="text-content">
+            At EA360, we pride ourselves on our work with the individual as well
+            as with the company as a whole.
+          </p>
+          <p class="text-content">
+            We work with the individual to build self-confidence and assist in
+            creating their personalised technical skill toolbox.
+          </p>
+        </div>
+        <a href="#" class="inline-block my-3 btn btn-action"
+          >Get your free guide now</a
+        >
+      </div>
+      <div class="block__right">
+        <div
+          class="flex justify-center relative min-h-[550px] min-w-[250px] max-w-[450px]"
+        >
+          <div
+            class="relative min-h-[550px] min-w-[250px] max-w-[450px] w-full h-full px-10 py-12 overflow-hidden block-item bg-blue-dark"
+          >
+            <h4
+              class="text-5xl relative z-10 font-black text-white title title-2 max-w-[250px] leading-snug"
+            >
+              Are you ready to transform your life ?
+            </h4>
+            <div class="overflow-hidden">
+              <div
+                class="absolute -right-[10%] -bottom-[5%] rounded-circle min-w-[350px] z-0 min-h-[350px] w-1/2 h-1/2 item-circle aspect-square"
+              ></div>
+              <div
+                class="absolute py-3 bottom-0 inset-x-0 pl-[80px] flex items-center w-full backdrop-blur-sm bg-[#413A7D]/30"
+              >
+                <svg
+                  class="w-10 h-10 mr-5"
+                  viewBox="0 0 39 39"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M34.1346 19.3529C34.1346 11.2551 27.5698 4.69043 19.4716 4.69043C11.3734 4.69043 4.80859 11.2551 4.80859 19.3529C4.80859 27.4508 11.3734 34.0154 19.4716 34.0154C27.5698 34.0154 34.1346 27.4508 34.1346 19.3529Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M22.7208 22.3169C22.7208 22.3169 22.7635 22.2863 22.8326 22.2338C23.8645 21.4353 24.5115 20.2788 24.5115 18.9916C24.5115 16.5912 22.2546 14.6436 19.4723 14.6436C16.6888 14.6436 14.4307 16.5912 14.4307 18.9916C14.4307 21.3932 16.6875 23.2736 19.4711 23.2736C19.7087 23.2736 20.0985 23.2577 20.6405 23.2266C21.3473 23.686 22.3786 24.0623 23.2816 24.0623C23.5608 24.0623 23.6928 23.8332 23.5138 23.5986C23.2413 23.265 22.8662 22.7305 22.7208 22.3162V22.3169Z"
+                    stroke="#333461"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M16.9512 20.1934C18.3515 21.5936 20.5913 21.5936 21.9916 20.1934"
+                    stroke="url(#paint0_linear_51_8009)"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M34.1346 19.3529C34.1346 11.2551 27.5698 4.69043 19.4716 4.69043C11.3734 4.69043 4.80859 11.2551 4.80859 19.3529C4.80859 27.4508 11.3734 34.0154 19.4716 34.0154C27.5698 34.0154 34.1346 27.4508 34.1346 19.3529Z"
+                    stroke="white"
+                    stroke-width="8"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_51_8009"
+                      x1="21.9198"
+                      y1="20.1934"
+                      x2="19.5169"
+                      y2="23.2237"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop offset="0.380208" stop-color="#0150D6" />
+                      <stop offset="0.588542" stop-color="#1D4EA0" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <div class="">
+                  <h5 class="mb-1 text-lg font-bold text-white">
+                    Ready to start ? Let's talk
+                  </h5>
+                  <p class="my-0 text-xs text-white text-content">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Maiores, impedit.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="badge-circle bg-blue-gradient min-w-[95px] h-[95px] text-center rounded-full flex items-center justify-center p-5 absolute -right-[5%] -top-[10%] aspect-square"
+          >
+            <h6 class="text-lg font-semibold">Free Guide</h6>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>

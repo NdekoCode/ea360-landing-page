@@ -121,3 +121,12 @@ body {
   margin-top   : rem(15);
   margin-bottom: rem(35);
 }
+
+.bg-blue-gradient {
+  background: linear-gradient(255.28deg, #0150D6 38.31%, #1D4EA0 58.68%);
+  color     : var(--color-white);
+}
+
+.bg-blue-dark {
+  background-color: var(--blue-dark);
+}

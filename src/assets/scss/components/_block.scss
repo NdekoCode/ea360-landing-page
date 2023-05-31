@@ -51,3 +51,10 @@
   height    : max-content;
   width     : max-content;
 }
+
+.annonces-product {
+  .item-circle {
+    background   : url('/assets/images/people.png') no-repeat center center/ cover;
+    border-radius: 50%;
+  }
+}
