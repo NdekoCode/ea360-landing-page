@@ -5,5 +5,18 @@
   min-width    : rem(50);
   min-height   : rem(45);
   border-radius: rem(5);
+  @apply border-2 border-transparent transition-colors duration-150;
 
+  &.btn-action {
+    background-color: var(--primary-color);
+    color           : var(--color-white);
+    padding         : rem(15) rem(45);
+
+    &:hover {
+      border-color    : var(--primary-color);
+      background-color: var(--color-white);
+      color           : var(--primary-color);
+
+    }
+  }
 }

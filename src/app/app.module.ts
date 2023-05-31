@@ -10,6 +10,7 @@ import { CardComponent } from './shared/components/card/card.component';
 import { NavbarComponent } from './shared/components/navbar/navbar.component';
 import { TestimonialComponent } from './shared/components/testimonial/testimonial.component';
 import { PartnerItemComponent } from './shared/components/partner-item/partner-item.component';
+import { CardBlogComponent } from './shared/components/card-blog/card-blog.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { PartnerItemComponent } from './shared/components/partner-item/partner-i
     TestimonialComponent,
     StarRatingComponent,
     PartnerItemComponent,
+    CardBlogComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

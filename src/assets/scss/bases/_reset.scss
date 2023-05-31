@@ -7,11 +7,11 @@
 }
 
 ::-webkit-scrollbar {
-  width: rem(12);
+  width: rem(10);
 }
 
 ::-webkit-scrollbar-track {
-  background-color: var(--bg-gray-smooth);
+  background-color: #ccc;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -85,6 +85,10 @@ body {
 
 .blue-dark-color {
   color: #4A556C;
+}
+
+.primary-color {
+  color: var(--primary-color);
 }
 
 .section {
