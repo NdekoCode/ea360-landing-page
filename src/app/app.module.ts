@@ -9,6 +9,7 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { CardComponent } from './shared/components/card/card.component';
 import { NavbarComponent } from './shared/components/navbar/navbar.component';
 import { TestimonialComponent } from './shared/components/testimonial/testimonial.component';
+import { PartnerItemComponent } from './shared/components/partner-item/partner-item.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { TestimonialComponent } from './shared/components/testimonial/testimonia
     CardComponent,
     TestimonialComponent,
     StarRatingComponent,
+    PartnerItemComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

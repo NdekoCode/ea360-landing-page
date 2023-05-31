@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { DATA_TESTIMONIALS } from 'src/app/libs/constants/data';
-import { Testimonial } from './../../libs/constants/types';
+import { PARTNER } from './../../libs/constants/data';
+import { Partner, Testimonial } from './../../libs/constants/types';
 
 @Component({
   selector: 'app-home',
@@ -9,4 +10,5 @@ import { Testimonial } from './../../libs/constants/types';
 })
 export class HomeComponent {
   testimonials: Testimonial[] = DATA_TESTIMONIALS;
+  partners: Partner[] = PARTNER;
 }

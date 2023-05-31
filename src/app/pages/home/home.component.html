@@ -269,3 +269,14 @@
     </div>
   </div>
 </section>
+<section id="partner" class="section">
+  <div class="container">
+    <p class="text-center">
+      Meet our customers, they trust us, from start-ups to the world's largest
+      companies.
+    </p>
+    <div class="flex flex-wrap items-center justify-around gap-5 my-3">
+      <app-partner-item *ngFor="let item of partners" [partner]="item" />
+    </div>
+  </div>
+</section>

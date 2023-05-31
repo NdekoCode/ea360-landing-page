@@ -26,3 +26,29 @@ export const DATA_TESTIMONIALS: Testimonial[] = [
     rating: 0,
   },
 ];
+export const PARTNER = [
+  {
+    title: 'Adapt IT',
+    image: '/assets/images/partner-adaptit.png',
+  },
+
+  {
+    title: 'DPO Think Payment',
+    image: '/assets/images/partner-dpo.png',
+  },
+
+  {
+    title: 'Swiss education Group',
+    image: '/assets/images/partber-seg.png',
+  },
+
+  {
+    title: 'Catalog',
+    image: '/assets/images/partner-catalog.png',
+  },
+
+  {
+    title: 'Quotient',
+    image: '/assets/images/partner-quotient.png',
+  },
+];

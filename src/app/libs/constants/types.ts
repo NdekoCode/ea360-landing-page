@@ -4,3 +4,7 @@ export type Testimonial = {
   userimage: string;
   rating: number;
 };
+export type Partner = {
+  title: string;
+  image: string;
+};
