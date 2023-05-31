@@ -122,3 +122,14 @@
   background-image       : var(--primary-color-gradient);
   font-weight            : bold;
 }
+
+%title-blue {
+  font-size  : rem(48);
+  color      : var(--blue-dark);
+  font-weight: 900;
+}
+
+.blue-dark {
+
+  color: var(--blue-dark);
+}

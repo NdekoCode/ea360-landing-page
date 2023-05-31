@@ -1,0 +1,36 @@
+.about {
+  max-width: rem(1140);
+  @apply mx-auto;
+
+  .icon {
+    color: var(--blue-dark);
+  }
+
+  .title-2 {
+    @extend %title-blue;
+  }
+
+  .icon,
+  .text-content,
+  .title {
+    @apply transition-colors duration-300;
+  }
+
+  .card {
+    @apply cursor-context-menu transition-colors duration-300;
+
+    &:nth-child(2) {
+      margin-top: rem(50);
+    }
+
+    &:hover {
+      background-color: var(--background-color);
+
+      .icon,
+      .text-content,
+      .title {
+        color: var(--color-white);
+      }
+    }
+  }
+}

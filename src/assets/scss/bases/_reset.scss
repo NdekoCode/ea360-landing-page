@@ -85,3 +85,34 @@ body {
 .blue-dark-color {
   color: #4A556C;
 }
+
+.section {
+  padding-block: rem(80);
+}
+
+.title-1 {
+  @extend %title-1;
+}
+
+.title-2 {
+  @extend %title-2;
+}
+
+.title-3 {
+  @extend %title-3;
+}
+
+.title-4 {
+  @extend %title-4;
+}
+
+.text-content {
+  margin-block: rem(10);
+  color       : var(--text-blue);
+  @apply text-base;
+}
+
+.block-context {
+  margin-top   : rem(15);
+  margin-bottom: rem(35);
+}

@@ -12,3 +12,37 @@
   box-shadow     : 0px 16px 96px rgba(111, 124, 145, 0.16);
   border-radius  : rem(5);
 }
+
+.block-content {
+
+  @media #{$lg-screen} {
+
+    .block__left,
+    .block__right {
+      flex-basis: 50%;
+      width     : 50%;
+    }
+
+  }
+}
+
+.card-grid {
+  display        : flex;
+  justify-content: center;
+  max-width      : rem(1040);
+  gap            : rem(20);
+  flex-wrap      : wrap;
+  padding-top    : rem(50);
+
+  .card {
+    flex-basis  : 50%;
+    min-height  : 350px;
+    height      : max-content;
+    max-width   : 360px;
+    aspect-ratio: 1/1;
+  }
+}
+
+.block-center {
+  @apply flex justify-center items-center;
+}

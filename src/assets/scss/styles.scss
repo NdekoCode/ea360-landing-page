@@ -9,12 +9,15 @@
 
 @import './layouts/topbar';
 @import './layouts/banner';
+@import './layouts/about';
+@import './layouts/testimonials';
 @import './components/block';
 @import './layouts/header';
 @import './layouts/footer';
 @import './layouts/forms';
 
 @import './components/buttons';
+@import './components/card';
 
 @import './pages/home';
 // @import './pages/about';
@@ -35,10 +38,6 @@
 .block {
   @apply flex flex-col;
 
-  .block__left,
-  .block__right {
-    width: 100%;
-  }
 
   @media #{$lg-screen} {
     @apply flex-row gap-x-5;
@@ -46,19 +45,9 @@
   }
 }
 
-.header__banner {
-  .block-content {
-
-    @media #{$lg-screen} {
-
-      .block__left,
-      .block__right {
-        flex-basis: 50%;
-        width     : 50%;
-      }
-
-    }
-  }
+.block__left,
+.block__right {
+  width: 100%;
 }
 
 .navbar {}
