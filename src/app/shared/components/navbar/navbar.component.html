@@ -1,5 +1,5 @@
 <nav class="navbar" [ngClass]="{ active: isActive }">
-  <div class="container">
+  <div class="container content">
     <div class="navbar__identity">
       <a href="#" class="block"
         ><img
@@ -10,7 +10,7 @@
       <button class="navbar__toggle" (click)="toggleActive()">
         <svg
           *ngIf="isActive; else notActive"
-          class="h-6 w-6"
+          class="w-6 h-6"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 384 512"
         >
@@ -31,7 +31,7 @@
         </ng-template>
       </button>
     </div>
-    <ul class="navbar__list w-full">
+    <ul class="w-full navbar__list">
       <li><a class="navbar__link" href="#">Home</a></li>
       <li><a class="navbar__link" href="#">About</a></li>
       <li><a class="navbar__link" href="#">Our Work</a></li>

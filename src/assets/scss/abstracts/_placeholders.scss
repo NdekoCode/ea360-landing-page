@@ -12,8 +12,7 @@
   }
 
   @media #{$md-screen} {
-    max-width     : 820px;
-    padding-inline: 0;
+    max-width: 820px;
   }
 
   @media #{$lg-screen} {
@@ -21,7 +20,8 @@
   }
 
   @media #{$xl-screen} {
-    max-width: 1240px;
+    max-width     : 1240px;
+    padding-inline: 0;
   }
 
 }

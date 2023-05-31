@@ -31,4 +31,14 @@
   }
 }
 
+
+.block {
+  @apply flex flex-col;
+
+  @media #{$lg-screen} {
+    @apply flex-row gap-x-5;
+
+  }
+}
+
 .navbar {}
