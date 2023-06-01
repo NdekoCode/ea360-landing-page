@@ -7,7 +7,7 @@
           src="/assets/images/icons/Logo.svg"
           alt="Logo EA360"
       /></a>
-      <button class="navbar__toggle" (click)="toggleActive()">
+      <button class="navbar__toggle" (click)="toggleActive()" *ngIf="isShown">
         <svg
           *ngIf="isActive; else notActive"
           class="w-6 h-6"

@@ -8,4 +8,5 @@ import { Component, Input } from '@angular/core';
 export class CardComponent {
   @Input() title: string = 'Executive Coaching';
   @Input() text: string = '';
+  @Input() item: string = '';
 }

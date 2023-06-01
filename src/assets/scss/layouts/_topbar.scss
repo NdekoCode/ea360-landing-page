@@ -39,6 +39,38 @@
     flex      : none;
     min-height: max-content;
   }
+
+  @media #{$lg-screen} {
+    .container {
+      padding-inline: 0;
+      flex-wrap     : nowrap;
+      width         : 100%;
+    }
+
+    .navbar__toggle {
+      display: none;
+    }
+
+    .navbar__list {
+      display    : flex;
+      gap        : 20px;
+      margin-left: auto;
+      width      : max-content;
+    }
+
+    .navbar__identity {
+
+      margin-right: auto;
+      width       : max-content;
+
+      .block {
+        display     : block;
+        min-width   : 150px;
+        margin-right: auto;
+      }
+    }
+
+  }
 }
 
 .navbar__link {

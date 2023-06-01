@@ -19,16 +19,42 @@
   .card {
 
     @apply cursor-context-menu p-12 transition-colors duration-300;
+    background: var(--primary-gradient);
 
+
+    .icon,
+    .text-content,
+    .title {
+      color: var(--color-white);
+    }
 
     &:hover {
       background-color: var(--background-color);
 
-      .icon,
-      .text-content,
-      .title {
-        color: var(--color-white);
-      }
+    }
+  }
+}
+
+.card-grid {
+  .card {
+
+    &.card-item-1 {
+
+      border-radius: 100px 4px 4px 4px;
+    }
+
+    &.card-item-2 {
+      border-radius: 4px 100px 4px 4px;
+    }
+
+    &.card-item-4 {
+      border-radius: 4px 4px 100px 4px;
+
+    }
+
+    &.card-item-3 {
+      border-radius: 4px 4px 4px 100px;
+
     }
   }
 }
