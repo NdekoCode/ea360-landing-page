@@ -149,3 +149,7 @@ body {
   --tw-shadow-colored: 0 .3125rem .625rem 0 var(--tw-shadow-color);
   box-shadow         : var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
+
+.text-badge {
+  @apply text-base text-gray-500 mb-1;
+}
