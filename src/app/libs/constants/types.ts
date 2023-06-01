@@ -17,3 +17,8 @@ export type Article = {
   body?: string;
   [key: string]: string | number | undefined | string[];
 };
+
+export type faq = {
+  question: string;
+  answer: string;
+};

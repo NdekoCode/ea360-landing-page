@@ -11,6 +11,8 @@ import { NavbarComponent } from './shared/components/navbar/navbar.component';
 import { TestimonialComponent } from './shared/components/testimonial/testimonial.component';
 import { PartnerItemComponent } from './shared/components/partner-item/partner-item.component';
 import { CardBlogComponent } from './shared/components/card-blog/card-blog.component';
+import { FaqComponent } from './shared/components/faq/faq.component';
+import { FooterComponent } from './shared/components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { CardBlogComponent } from './shared/components/card-blog/card-blog.compo
     StarRatingComponent,
     PartnerItemComponent,
     CardBlogComponent,
+    FaqComponent,
+    FooterComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

@@ -1,4 +1,4 @@
-import { Article, Testimonial } from './types';
+import { Article, Testimonial, faq } from './types';
 
 export const DATA_ABOUT_US = [
   {
@@ -79,5 +79,28 @@ export const BLOG_ARTICLES: Article[] = [
     image: 'assets/images/blog-3.jpeg',
     tag: 'Stories from the field',
     linkTitle: 'Read more',
+  },
+];
+
+export const FAQ: faq[] = [
+  {
+    question: 'How long does the coaching process take?',
+    answer:
+      'Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible.',
+  },
+  {
+    question: 'What if I wanted to end my coaching engagement?',
+    answer:
+      'Absolument ! Notre application est conçue pour les freelances et les entreprises qui cherchent à gérer efficacement les prestations de service. Vous pouvez facilement suivre les projets, les facturations et les paiements en un seul endroit.',
+  },
+  {
+    question: 'Can I change through coaching?',
+    answer:
+      'Nous avons conçu cette application pour être simple et intuitive à utiliser pour tous les utilisateurs, même les moins technophiles. Nous offrons une interface conviviale et des fonctionnalités faciles à comprendre pour une expérience utilisateur sans stress.',
+  },
+  {
+    question: 'How often do we meet?',
+    answer:
+      "Notre application vous permet de suivre facilement l'état de vos prestations en temps réel. Vous pouvez voir les prestations en cours, les prestations terminées et les prestations à venir. Vous pouvez également recevoir des notifications par e-mail pour vous tenir informé de l'état de vos prestations.",
   },
 ];

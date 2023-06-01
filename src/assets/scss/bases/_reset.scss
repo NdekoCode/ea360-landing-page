@@ -153,3 +153,7 @@ body {
 .text-badge {
   @apply text-base text-gray-500 mb-1;
 }
+
+.bg-smooth {
+  background-color: var(--bg-gray-smooth);
+}
