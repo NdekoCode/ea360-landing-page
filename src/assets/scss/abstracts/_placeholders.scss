@@ -130,9 +130,24 @@
   line-height: rem(55);
 }
 
+.big-title {
+  font-size: 2rem;
+
+  @media #{$md-screen} {
+    font-size: 2.5rem;
+  }
+
+  @media #{$lg-screen} {
+    font-size: 3rem;
+  }
+}
+
 .title-blue {
   @extend %title-blue;
+  @extend .big-title;
 }
+
+
 
 .blue-dark {
 
