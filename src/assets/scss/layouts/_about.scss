@@ -20,6 +20,7 @@
   .card {
 
     @apply cursor-context-menu p-12 transition-colors duration-300;
+    @extend .shadow-soft-xl;
     background: var(--primary-gradient);
 
 
@@ -30,7 +31,15 @@
     }
 
     &:hover {
-      background-color: var(--background-color);
+      background-color: var(--color-white);
+      background-image: none;
+
+
+      .icon,
+      .text-content,
+      .title {
+        color: var(--icon-blue);
+      }
 
     }
   }
