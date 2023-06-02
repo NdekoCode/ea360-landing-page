@@ -66,6 +66,7 @@
     img {
       border-top-right-radius  : rem(25);
       border-bottom-left-radius: rem(25);
+      border-radius            : 214px 0px 219px 216px;
 
       @media #{$md-screen} {
         border-top-right-radius  : rem(50);
