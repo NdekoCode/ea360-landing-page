@@ -8,16 +8,16 @@
   @apply border-2 border-transparent transition-colors duration-150;
 
   &.btn-action {
-    background-color: #bdea09;
-    color           : var(--dark-blue);
+    background-color: var(--background-color);
+    color           : var(--color-white);
     font-weight     : 600;
     padding         : rem(15) rem(45);
     text-transform  : capitalize;
 
     &:hover {
-      border-color    : var(--dark-blue);
+      border-color    : var(--background-color);
       background-color: transparent;
-      color           : var(--dark-blue);
+      color           : var(--background-color);
 
     }
 

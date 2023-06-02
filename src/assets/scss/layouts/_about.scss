@@ -20,27 +20,31 @@
 
   .card {
 
-    background: var(--primary-gradient);
-    @apply cursor-context-menu p-12 transition-colors duration-300;
+    background-color: var(--color-white);
+    background-image: none;
+    border-color    : rgba(#041434, 0.2) !important;
+    box-shadow      : 0 5px 35px rgba(#041434, 0.05) !important;
+    transition      : all 0.5s;
+
+    @apply cursor-context-menu p-12;
     @extend .shadow-soft-xl;
+
 
 
     .icon,
     .text-content,
     .title {
-      color: var(--color-white);
-      @apply transition-colors duration-300;
+      color: var(--icon-blue);
     }
 
     &:hover {
-      background-color: var(--color-white);
-      background-image: none;
-
+      background: var(--primary-gradient);
 
       .icon,
       .text-content,
       .title {
-        color: var(--icon-blue);
+        color: var(--color-white);
+        @apply transition-colors duration-300;
       }
 
     }
