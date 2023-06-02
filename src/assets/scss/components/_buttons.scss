@@ -8,17 +8,31 @@
   @apply border-2 border-transparent transition-colors duration-150;
 
   &.btn-action {
-    background-color: var(--primary-color);
-    color           : var(--color-white);
+    background-color: #bdea09;
+    color           : var(--dark-blue);
+    font-weight     : 600;
     padding         : rem(15) rem(45);
+    text-transform  : capitalize;
 
     &:hover {
-      border-color    : var(--primary-color);
-      background-color: var(--color-white);
-      color           : var(--primary-color);
+      border-color    : var(--dark-blue);
+      background-color: transparent;
+      color           : var(--dark-blue);
 
     }
+
   }
+
+  .btn-icon {
+    display      : flex;
+    justify-items: center;
+    row-gap      : rem(5);
+
+    .icon {
+      margin-right: rem(5);
+    }
+  }
+
 
   &.btn-small {
     @apply py-3;

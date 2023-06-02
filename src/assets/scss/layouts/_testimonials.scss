@@ -1,8 +1,9 @@
 .testimonials {
-  background-color: var(--bg-gray-smooth);
+  background: var(--background-color);
 
   .title-2 {
     @extend %title-blue;
+    color: vaR(--color-white) !important;
   }
 }
 

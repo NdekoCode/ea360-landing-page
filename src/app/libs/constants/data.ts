@@ -58,7 +58,7 @@ export const BLOG_ARTICLES: Article[] = [
     title: 'A progressive mindset on development',
     except:
       'A progressive mindset on development is a perspective that emphasizes continuous improvement and growth, both on an individual level and on a larger scale.',
-    image: 'assets/images/blog-1.jpeg',
+    image: 'assets/images/blog-1.jpg',
     tag: 'Stories from the field',
     linkTitle: 'Read more',
   },
@@ -67,7 +67,7 @@ export const BLOG_ARTICLES: Article[] = [
     title: 'We were so honored our event',
     except:
       'We were so honored to host you at our first event in March, in honor of that we want to see you again! Last month during the first edition of our Phenomenal Woman Series,',
-    image: 'assets/images/blog-4.jpeg',
+    image: 'assets/images/blog-4.jpg',
     tag: 'Stories from the field',
     linkTitle: 'Read more',
   },
@@ -76,7 +76,7 @@ export const BLOG_ARTICLES: Article[] = [
     title: 'Webinar on Mastering Time Management!',
     except:
       'On Saturday, May 13th 2023, we will hold the second event in the Phenomenal Woman Series, the objectives of which are to provide practical resources for financial independence and mental fitness.',
-    image: 'assets/images/blog-3.jpeg',
+    image: 'assets/images/blog-3.jpg',
     tag: 'Stories from the field',
     linkTitle: 'Read more',
   },

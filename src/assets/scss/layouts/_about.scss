@@ -1,5 +1,6 @@
 .about {
   max-width: rem(1140);
+
   @apply mx-auto;
 
   .icon {
@@ -19,15 +20,16 @@
 
   .card {
 
+    background: var(--primary-gradient);
     @apply cursor-context-menu p-12 transition-colors duration-300;
     @extend .shadow-soft-xl;
-    background: var(--primary-gradient);
 
 
     .icon,
     .text-content,
     .title {
       color: var(--color-white);
+      @apply transition-colors duration-300;
     }
 
     &:hover {
@@ -47,6 +49,7 @@
 
 .card-grid {
   .card {
+    @apply transition-colors duration-150;
 
     &.card-item-1 {
 
