@@ -1,0 +1,25 @@
+<article
+  class="blog-card shadow-soft-xl transition-colors bg-white max-w-[400px] min-w-[250px] text-center min-h-[580px] flex flex-col items-center"
+>
+  <header class="w-full">
+    <img
+      [src]="article.image"
+      class="w-100 max-w-[400px] min-w-[245px] h-[240px] object-cover"
+      [alt]="article.title"
+    />
+  </header>
+  <div class="px-3 card-body">
+    <div class="my-5 text-xs font-medium uppercase primary-color">
+      {{ article.tag }}
+    </div>
+    <h3 class="text-center title title-3 blue-dark">{{ article.title }}</h3>
+    <p class="text-content">{{ article.except }}</p>
+  </div>
+  <footer class="px-3 pb-5">
+    <a
+      href="#"
+      class="my-5 text-sm font-semibold underline uppercase primary-color"
+      >Learn more</a
+    >
+  </footer>
+</article>
